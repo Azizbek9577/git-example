@@ -1,2 +1,4 @@
 qidiramiz tugadi
+git hubdan turib o'zgartirdim
+
 
