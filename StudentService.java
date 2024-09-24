@@ -22,7 +22,3 @@ public class StudentService {
         }
     }
 }
-
-// Git kommandalari
-// git add .
-// git commit -m "StudentService class created"
