@@ -21,4 +21,19 @@ public class StudentService {
             students.remove(index);
         }
     }
+    public List<Student> searchStudents(String ism, String familiya, String hobby) {
+        List<Student> results = new ArrayList<>(students);
+        if (ism != null) {
+            results.removeIf(s -> !s.getIsm().equals(ism));
+        }
+        if (familiya != null) {
+            results.removeIf(s -> !s.getFamiliya().equals(familiya));
+        }
+        if (hobby != null) {
+            results.removeIf(s -> !s.getHobbilar().contains(hobby));
+        }
+        return results;
+    }
 }
+
+
